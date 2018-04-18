@@ -251,10 +251,17 @@ void BstStringSet::insert(const string& x){
 
 int main(){
     BstStringSet a = BstStringSet("test.txt");
+    cout << "tree:"<<endl;
     a.printInorder();
+    cout << "find(f):"<<endl;
     cout <<a.find("f");
+    cout << "erase(a)"<< endl;
     a.erase("a");
+    cout << "tree:"<<endl;
     a.printInorder();
+    cout << "predecessor(h):" <<a.predecessor("h")<< endl;
+    cout << "successor(s):" <<a.successor("s")<< endl;
+    
 }
 
 
